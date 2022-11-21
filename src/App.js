@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import shiftkey from "./shiftkey-logo.png";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="row">
+          <img src={shiftkey} alt="" />
+          <img src={logo} alt="" />
+        </div>
+        <h1>
+          Say Hello to <span style={{ color: "#61dafb" }}>React</span>
+        </h1>
+        <p style={{ fontSize: 14 }}>Presented by Vansh Sood</p>
       </header>
     </div>
   );
