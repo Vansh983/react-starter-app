@@ -54,8 +54,8 @@ function App() {
   return (
     <div className="container main-container">
       <Header handleShowForm={handleShowForm} />
-      <Tasks tasks={tasks} handleDelete={handleDelete} />
       {showForm ? <Form handleAdd={handleAdd} /> : ""}
+      <Tasks tasks={tasks} handleDelete={handleDelete} />
     </div>
   );
 }
